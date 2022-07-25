@@ -1,0 +1,35 @@
+.app-header {
+  background: $dark1;
+  width: 60%;
+  min-width: 300px;
+  max-width: 650px;
+  margin: 40px auto 30px;
+  text-align: center;
+  position: relative;
+  padding: 20px 20px;
+  border-radius: 0 20px 20px 20px;
+  min-height: 258px;
+  box-shadow: $shadow;
+
+  .connect-modal {
+    height: 100%;
+
+    .header-btn {
+      position: absolute;
+      left: 0;
+      top: -29px;
+
+      button {
+        color: $white;
+        background: $dark1;
+        padding: 4px 14px;
+        border-radius: 10px 10px 0 0;
+        transition: 0.2s;
+
+        &:hover {
+          filter: brightness(135%);
+        }
+      }
+    }
+  }
+}
