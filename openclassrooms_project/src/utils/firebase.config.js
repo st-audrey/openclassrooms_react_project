@@ -2,12 +2,12 @@ import firebase from "firebase/compat/app";
 import "firebase/compat/auth";
 
 const app = firebase.initializeApp({
-  apiKey: "AIzaSyAfnQUf51F64mDgo3bKIL3jcJBVcG14ACs",
-  authDomain: "openclassrooms-react-project.firebaseapp.com",
-  projectId: "openclassrooms-react-project",
-  storageBucket: "openclassrooms-react-project.appspot.com",
-  messagingSenderId: "836985397472",
-  appId: "1:836985397472:web:88fe19fd0d0776d8f37085"
+  apiKey: process.env.REACT_APP_API_KEY,
+  authDomain: process.env.REACT_APP_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_ID
 });
 
 export const auth = app.auth();
